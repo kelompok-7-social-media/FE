@@ -4,7 +4,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label?: string | ReactNode;
 }
 
-export const ButtonWhite: FC<ButtonProps> = ({ label, ...props }) => {
+export const ButtonPink: FC<ButtonProps> = ({ label, ...props }) => {
   return (
     <button
       className="border-2 rounded-full border-pink text-pink px-10"
@@ -15,7 +15,7 @@ export const ButtonWhite: FC<ButtonProps> = ({ label, ...props }) => {
   );
 };
 
-export const ButtonPink: FC<ButtonProps> = ({ label, ...props }) => {
+export const ButtonWhite: FC<ButtonProps> = ({ label, ...props }) => {
   return (
     <button
       className="border-2 rounded-full border-white text-white px-10"
