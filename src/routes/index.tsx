@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <Register />,
   },
   {
-    path: "/home",
+    path: "/timeline",
     element: <Timeline />,
   },
   {
