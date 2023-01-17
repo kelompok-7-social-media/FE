@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import Navbar from "components/Navbar";
-function App() {
-  const [count, setCount] = useState(0);
+import Layout from "components/Layout";
 
+const Index = () => {
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <Layout>
+      <section className="bg-gradient-to-b from-bgpurple to-bgpink h-full flex justify-center items-center"></section>
+    </Layout>
   );
-}
+};
 
-export default App;
+export default Index;
