@@ -30,7 +30,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="dropdown-content menu my-5 p-2 shadow border-2 border-gray-300 rounded-box w-40"
+            className="dropdown-content z-50 menu my-5 p-2 shadow border-2 border-gray-300 bg-gray-100 rounded-box w-40"
           >
             <li>
               <Link to="/profile">Profile</Link>
