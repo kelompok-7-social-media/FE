@@ -1,4 +1,3 @@
-import reactLogo from "assets/react.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -28,9 +27,9 @@ const Index = () => {
             type="text"
             placeholder="****************"
           />
-          <a className="flex justify-center mt-7 mb-5">
+          <Link className="flex justify-center mt-7 mb-5" to="/timeline">
             <ButtonWhite label="Login" />
-          </a>
+          </Link>
           <p className="flex justify-center text-white font-light mb-3">OR</p>
           <span className="flex justify-center text-white text-sm gap-2">
             Don't have an account?
