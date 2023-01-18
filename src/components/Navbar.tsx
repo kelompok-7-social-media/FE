@@ -2,6 +2,8 @@ import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 
+import logo from "src/assets/logo-white.svg";
+import photo1 from "src/assets/photo1.jpg";
 import { ThemeContext } from "utils/context";
 
 const Navbar = () => {
@@ -17,7 +19,7 @@ const Navbar = () => {
         <Link to="/timeline">
           <img
             className="w-12 duration-300 active:scale-90 hover:cursor-pointer"
-            src="src/assets/logo-white.svg"
+            src={logo}
             alt="logo"
           />
         </Link>
@@ -35,11 +37,7 @@ const Navbar = () => {
             tabIndex={0}
             className="text-white flex items-center duration-300 active:scale-110 hover:cursor-pointer"
           >
-            <img
-              className="w-12 rounded-full mx-2"
-              src="src/assets/photo1.jpg"
-              alt="photo"
-            />
+            <img className="w-12 rounded-full mx-2" src={photo1} alt="photo" />
             <IoIosArrowDown />
           </label>
           <ul

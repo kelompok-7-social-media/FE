@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import logo from "src/assets/logo-white.svg";
+import galaxy from "src/assets/galaxy-white.svg";
 import { ButtonPink, ButtonWhite } from "components/Button";
 import Layout from "components/Layout";
 import { useTitle } from "utils/hooks/customHooks";
@@ -10,10 +12,10 @@ const Index = () => {
     <Layout>
       <section className="bg-gradient-to-b from-bgpurple to-bgpink h-full py-16 md:hidden">
         <div className="w-full flex justify-center">
-          <img src="src/assets/logo-white.svg" alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
         <div className="w-full flex justify-center">
-          <img className="w-40" src="src/assets/galaxy-white.svg" alt="logo" />
+          <img className="w-40" src={galaxy} alt="logo" />
         </div>
         <div className="my-5 mx-16">
           <p className="text-white">Email :</p>
@@ -42,8 +44,8 @@ const Index = () => {
       </section>
       <section className="bg-gradient-to-b from-bgpurple to-bgpink h-full py-16 hidden md:flex md:items-center md:px-10 lg:px-36 xl:px-60">
         <div className="w-1/2 flex flex-col items-center">
-          <img src="src/assets/logo-white.svg" alt="logo" />
-          <img className="w-40" src="src/assets/galaxy-white.svg" alt="logo" />
+          <img src={logo} alt="logo" />
+          <img className="w-40" src={galaxy} alt="logo" />
         </div>
 
         <div className="w-1/2 my-5 mx-16 border-4 py-20 px-10 rounded-3xl bg-white md:px-5">
