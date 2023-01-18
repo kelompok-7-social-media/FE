@@ -4,8 +4,10 @@ import React from "react";
 import { ButtonSmall } from "components/Button";
 import Layout from "components/Layout";
 import Navbar from "components/Navbar";
+import { useTitle } from "utils/hooks/customHooks";
 
 const Profile = () => {
+  useTitle(`'s Profile`);
   return (
     <Layout>
       <Navbar />

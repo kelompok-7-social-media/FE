@@ -3,8 +3,10 @@ import { useState } from "react";
 
 import { ButtonPink, ButtonWhite } from "components/Button";
 import Layout from "components/Layout";
+import { useTitle } from "utils/hooks/customHooks";
 
 const Index = () => {
+  useTitle("Galaxy - Login");
   return (
     <Layout>
       <section className="bg-gradient-to-b from-bgpurple to-bgpink h-full py-16 md:hidden">

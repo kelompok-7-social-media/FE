@@ -3,8 +3,10 @@ import { useState } from "react";
 
 import { ButtonSmall } from "components/Button";
 import Layout from "components/Layout";
+import { useTitle } from "utils/hooks/customHooks";
 
 const EditProfile = () => {
+  useTitle(`Edit your profile`);
   return (
     <Layout>
       <section className="bg-gradient-to-b from-bgpurple to-bgpink h-full pt-40 px-10 sm:pt-24 md:px-32 lg:px-60 xl:px-96">
