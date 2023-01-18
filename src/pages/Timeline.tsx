@@ -58,7 +58,7 @@ const Timeline = () => {
             <BiDotsHorizontalRounded />
           </span>
         </div>
-        <p className="px-3 mb-2 text-sm font-">
+        <p className="px-3 mb-2 text-sm">
           Comments content Lorem Ipsum is simply dummy text of the printing and
           typesetting industry.
         </p>

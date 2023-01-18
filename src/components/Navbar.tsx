@@ -4,18 +4,16 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar px-2 bg-gradient-to-b from-bgpurple to-bgpink md:px-5 mb-1">
+    <div className="navbar px-2 bg-gradient-to-b from-bgpurple to-bgpink sm:px-5 mb-1">
       <div className="navbar-start">
         <img className="w-12" src="src/assets/logo-white.svg" alt="logo" />
-        <p className="normal-case text-white font-bold mx-1 md:hidden">
-          Timeline
-        </p>
+        <p className="normal-case text-white font-bold mx-1 sm:hidden">Title</p>
       </div>
-      <div className="navbar-center hidden md:flex">
-        <p className="normal-case text-white font-bold">Timeline</p>
+      <div className="navbar-center hidden sm:flex">
+        <p className="normal-case text-white font-bold">Title</p>
       </div>
       <div className="navbar-end">
-        <p className="text-white font-medium text-sm hidden md:flex">
+        <p className="text-white font-medium text-sm hidden sm:flex">
           John Doe
         </p>
 
