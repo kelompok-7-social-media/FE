@@ -1,5 +1,7 @@
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 
+import photo1 from "src/assets/photo1.jpg";
+import picture from "src/assets/picture.jpg";
 import { ButtonWhite } from "components/Button";
 import Layout from "components/Layout";
 import Navbar from "components/Navbar";
@@ -14,11 +16,7 @@ const Detail = () => {
         <section className="bg-gradient-to-b from-bgpurple to-bgpink py-5 px-5 mb-5 rounded-b-2xl sm:rounded-2xl sm:mx-20 md:mx-40 lg:mx-60 xl:mx-80">
           <div className="flex items-center justify-between px-3 mb-2">
             <div className="flex items-center gap-3">
-              <img
-                className="w-10 rounded-full"
-                src="src/assets/photo1.jpg"
-                alt="photo"
-              />
+              <img className="w-10 rounded-full" src={photo1} alt="photo" />
               <span className="font-bold text-white">username</span>
               <span className="text-xs text-white font-normal">
                 01 Jan 2023
@@ -29,7 +27,7 @@ const Detail = () => {
             </span>
           </div>
           <div className="mb-2 flex justify-center">
-            <img src="src/assets/picture.jpg" alt="picture" />
+            <img src={picture} alt="picture" />
           </div>
           <p className="px-3 mb-5 text-white text-sm">
             Lorem Ipsum is simply dummy text of the printing and typesetting

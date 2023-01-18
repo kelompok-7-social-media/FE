@@ -1,5 +1,7 @@
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 
+import photo1 from "src/assets/photo1.jpg";
+import picture from "src/assets/picture.jpg";
 import { ButtonSmall } from "components/Button";
 import Layout from "components/Layout";
 import Navbar from "components/Navbar";
@@ -13,11 +15,7 @@ const Profile = () => {
       <div className="pt-1 dark:bg-gray-900 dark:text-white">
         <section className="bg-gradient-to-b from-bgpurple to-bgpink py-5 px-5 mb-5 rounded-b-2xl sm:rounded-2xl sm:mx-20 md:mx-40 lg:mx-60 xl:mx-80">
           <div className="flex items-center mb-5">
-            <img
-              className="w-20 rounded-full mx-2"
-              src="src/assets/photo1.jpg"
-              alt="photo"
-            />
+            <img className="w-20 rounded-full mx-2" src={photo1} alt="photo" />
             <span className="mx-3 w-full">
               <p className="text-2xl text-white font-semibold">John Doe</p>
               <p className="text-white font-light">@JohnDoe</p>
@@ -38,11 +36,7 @@ const Profile = () => {
           </p>
           <div className="flex items-center justify-between px-3 mb-2">
             <div className="flex items-center gap-3">
-              <img
-                className="w-10 rounded-full"
-                src="src/assets/photo1.jpg"
-                alt="photo"
-              />
+              <img className="w-10 rounded-full" src={photo1} alt="photo" />
               <span className="font-bold">username</span>
               <span className="text-xs font-normal">01 Jan 2023</span>
             </div>
@@ -51,7 +45,7 @@ const Profile = () => {
             </span>
           </div>
           <div className="mb-2 flex justify-center">
-            <img src="src/assets/picture.jpg" alt="picture" />
+            <img src={picture} alt="picture" />
           </div>
           <p className="px-3 mb-2 text-sm">
             Lorem Ipsum is simply dummy text of the printing and typesetting
