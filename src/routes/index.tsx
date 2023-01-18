@@ -12,7 +12,7 @@ import { ThemeContext } from "utils/context";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/login",
     element: <Login />,
   },
   {
