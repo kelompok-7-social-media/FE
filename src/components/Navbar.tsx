@@ -6,7 +6,11 @@ const Navbar = () => {
   return (
     <div className="navbar px-2 bg-gradient-to-b from-bgpurple to-bgpink sm:px-5 mb-1">
       <div className="navbar-start">
-        <img className="w-12" src="src/assets/logo-white.svg" alt="logo" />
+        <img
+          className="w-12 duration-300 active:scale-125 hover:cursor-pointer"
+          src="src/assets/logo-white.svg"
+          alt="logo"
+        />
         <p className="normal-case text-white font-bold mx-1 sm:hidden">Title</p>
       </div>
       <div className="navbar-center hidden sm:flex">
