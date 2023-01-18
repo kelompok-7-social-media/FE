@@ -11,7 +11,7 @@ const Timeline = () => {
   return (
     <Layout>
       <Navbar />
-      <div>
+      <div className="pt-1 dark:bg-gray-900 dark:text-white">
         <section className="bg-gradient-to-b from-bgpurple to-bgpink py-5 px-5 mb-5 rounded-b-2xl sm:rounded-2xl sm:mx-20 md:mx-40 lg:mx-60 xl:mx-80">
           <input
             className="w-full rounded-2xl py-5 px-5 border-2 border-gray-500 mb-3"

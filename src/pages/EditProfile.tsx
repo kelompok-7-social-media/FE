@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 import { ButtonSmall } from "components/Button";
 import Layout from "components/Layout";
@@ -10,7 +9,7 @@ const EditProfile = () => {
   return (
     <Layout>
       <section className="bg-gradient-to-b from-bgpurple to-bgpink h-full pt-40 px-10 sm:pt-24 md:px-32 lg:px-60 xl:px-96">
-        <div className="my-5 sm:border-4 sm:rounded-3xl sm:p-20">
+        <div className="sm:border-4 sm:rounded-3xl sm:p-10">
           <div className="flex items-center mb-5">
             <span className="flex flex-col items-center duration-300 hover:cursor-pointer active:scale-90">
               <img
