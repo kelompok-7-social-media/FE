@@ -7,7 +7,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export const ButtonPink: FC<ButtonProps> = ({ label, ...props }) => {
   return (
     <button
-      className="border-2 rounded-full border-pink text-pink px-16"
+      className="border-2 rounded-full border-pink text-pink w-40"
       {...props}
     >
       {label}
@@ -18,7 +18,7 @@ export const ButtonPink: FC<ButtonProps> = ({ label, ...props }) => {
 export const ButtonWhite: FC<ButtonProps> = ({ label, ...props }) => {
   return (
     <button
-      className="border-2 rounded-full border-white text-white px-16"
+      className="border-2 rounded-full border-white text-white w-40"
       {...props}
     >
       {label}
