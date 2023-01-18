@@ -6,7 +6,11 @@ const Navbar = () => {
   return (
     <div className="navbar px-2 bg-gradient-to-b from-bgpurple to-bgpink sm:px-5 mb-1">
       <div className="navbar-start">
-        <img className="w-12" src="src/assets/logo-white.svg" alt="logo" />
+        <img
+          className="w-12 duration-300 active:scale-125 hover:cursor-pointer"
+          src="src/assets/logo-white.svg"
+          alt="logo"
+        />
         <p className="normal-case text-white font-bold mx-1 sm:hidden">Title</p>
       </div>
       <div className="navbar-center hidden sm:flex">
@@ -16,9 +20,11 @@ const Navbar = () => {
         <p className="text-white font-medium text-sm hidden sm:flex">
           John Doe
         </p>
-
         <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="text-white flex items-center">
+          <label
+            tabIndex={0}
+            className="text-white flex items-center duration-300 active:scale-110 hover:cursor-pointer"
+          >
             <img
               className="w-12 rounded-full mx-2"
               src="src/assets/photo1.jpg"
