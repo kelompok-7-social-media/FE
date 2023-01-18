@@ -16,9 +16,11 @@ const Navbar = () => {
         <p className="text-white font-medium text-sm hidden sm:flex">
           John Doe
         </p>
-
         <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="text-white flex items-center">
+          <label
+            tabIndex={0}
+            className="text-white flex items-center duration-300 active:scale-110 hover:cursor-pointer"
+          >
             <img
               className="w-12 rounded-full mx-2"
               src="src/assets/photo1.jpg"
