@@ -8,14 +8,14 @@ import Layout from "components/Layout";
 const Signup = () => {
   return (
     <Layout>
-      <section className="bg-gradient-to-b from-bgpurple to-bgpink h-full py-5 md:hidden">
+      <section className="bg-gradient-to-b from-bgpurple to-bgpink py-10 md:hidden">
         <div className="w-full flex justify-center">
           <img className="w-20" src="src/assets/logo-white.svg" alt="logo" />
         </div>
         <div className="w-full flex justify-center">
           <img className="w-20" src="src/assets/galaxy-white.svg" alt="logo" />
         </div>
-        <div className="my-5 mx-5 border-4 py-5 px-10 rounded-3xl bg-white md:px-5">
+        <div className="my-5 mx-5 border-4 py-5 px-5 rounded-3xl bg-white md:px-5">
           <p className="">Full name :</p>
           <input
             className="w-full rounded-full py-2 px-5 mb-5 border-2 border-gray-500"
