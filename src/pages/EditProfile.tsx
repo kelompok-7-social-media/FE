@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+import photo1 from "src/assets/photo1.jpg";
 import { ButtonSmall } from "components/Button";
 import Layout from "components/Layout";
 import { useTitle } from "utils/hooks/customHooks";
@@ -14,7 +15,7 @@ const EditProfile = () => {
             <span className="flex flex-col items-center duration-300 hover:cursor-pointer active:scale-90">
               <img
                 className="w-20 rounded-full mx-2"
-                src="src/assets/photo1.jpg"
+                src={photo1}
                 alt="photo"
               />
               <span className="text-xs text-white font-light">
