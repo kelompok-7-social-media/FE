@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 
 import { ButtonPink, ButtonWhite } from "components/Button";
 import Layout from "components/Layout";
+import { useTitle } from "utils/hooks/customHooks";
 
 const Signup = () => {
+  useTitle(`Let's sign up!`);
   return (
     <Layout>
       <section className="bg-gradient-to-b from-bgpurple to-bgpink py-10 md:hidden">
