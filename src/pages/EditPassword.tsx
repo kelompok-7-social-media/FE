@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
-import { ButtonPink, ButtonSmall } from "components/Button";
+import { ButtonSmall } from "components/Button";
 import Layout from "components/Layout";
 import { useTitle } from "utils/hooks/customHooks";
 

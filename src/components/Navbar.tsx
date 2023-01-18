@@ -1,16 +1,26 @@
 import { IoIosArrowDown } from "react-icons/io";
-
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+
+import { ThemeContext } from "utils/context";
 
 const Navbar = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+
+  function handleTheme() {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  }
+
   return (
-    <div className="navbar px-2 bg-gradient-to-b from-bgpurple to-bgpink sm:px-5 mb-1">
+    <div className="navbar px-2 bg-gradient-to-b from-bgpurple to-bgpink sm:px-5">
       <div className="navbar-start">
-        <img
-          className="w-12 duration-300 active:scale-125 hover:cursor-pointer"
-          src="src/assets/logo-white.svg"
-          alt="logo"
-        />
+        <Link to="/timeline">
+          <img
+            className="w-12 duration-300 active:scale-90 hover:cursor-pointer"
+            src="src/assets/logo-white.svg"
+            alt="logo"
+          />
+        </Link>
         <p className="normal-case text-white font-bold mx-1 sm:hidden">Title</p>
       </div>
       <div className="navbar-center hidden sm:flex">
@@ -34,8 +44,20 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="dropdown-content z-50 menu my-5 p-2 shadow border-2 border-gray-300 bg-gray-100 rounded-box w-40"
+            className="dropdown-content z-50 menu my-5 p-2 shadow border-2 border-gray-300 bg-gray-100 rounded-box w-60 text-sm"
           >
+            <li>
+              <a className="justify-between">
+                Dark Mode
+                <span className="badge">
+                  <label className="swap">
+                    <input type="checkbox" onClick={() => handleTheme()} />
+                    <div className="swap-on">ON</div>
+                    <div className="swap-off">OFF</div>
+                  </label>
+                </span>
+              </a>
+            </li>
             <li>
               <Link to="/profile">Profile</Link>
             </li>
