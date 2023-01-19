@@ -9,7 +9,7 @@ export function ButtonPink({ id, label, loading, ...props }: ButtonProps) {
   return (
     <button
       id={id}
-      className="border-2 rounded-full border-pink text-pink w-40 duration-300 active:scale-90 hover:cursor-pointer disabled:cursor-not-allowed disabled:active:scale-100"
+      className="border-2 rounded-full border-pink text-pink w-40 duration-300 active:scale-90 hover:cursor-pointer disabled:cursor-not-allowed disabled:active:scale-100 disabled:text-gray-300 disabled:border-gray-400"
       disabled={loading}
       {...props}
     >
@@ -22,7 +22,7 @@ export function ButtonWhite({ id, label, loading, ...props }: ButtonProps) {
   return (
     <button
       id={id}
-      className="border-2 rounded-full border-white text-white w-40 duration-300 active:scale-90 hover:cursor-pointer"
+      className="border-2 rounded-full border-white text-white w-40 duration-300 active:scale-90 hover:cursor-pointer disabled:cursor-not-allowed disabled:active:scale-100 disabled:text-gray-300 disabled:border-gray-400"
       disabled={loading}
       {...props}
     >
@@ -34,7 +34,7 @@ export function ButtonWhite({ id, label, loading, ...props }: ButtonProps) {
 export const ButtonSmall: FC<ButtonProps> = ({ label, ...props }) => {
   return (
     <button
-      className="border-2 rounded-full border-white text-white w-32 duration-300 active:scale-90 hover:cursor-pointer"
+      className="border-2 rounded-full border-white text-white w-32 duration-300 active:scale-90 hover:cursor-pointer disabled:cursor-not-allowed disabled:active:scale-100 disabled:text-gray-300 disabled:border-gray-400"
       {...props}
     >
       {label}
