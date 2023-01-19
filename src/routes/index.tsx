@@ -62,27 +62,27 @@ const App = () => {
     },
     {
       path: "/register",
-      element: checkToken ? <Navigate to="/timeline" /> : <Register />,
+      element: <Register />,
     },
     {
       path: "/timeline",
-      element: checkToken ? <Timeline /> : <Navigate to="/" />,
+      element: <Timeline />,
     },
     {
       path: "/detail",
-      element: checkToken ? <Detail /> : <Navigate to="/" />,
+      element: <Detail />,
     },
     {
       path: "/profile",
-      element: checkToken ? <Profile /> : <Navigate to="/" />,
+      element: <Profile />,
     },
     {
       path: "/edit-profile",
-      element: checkToken ? <EditProfile /> : <Navigate to="/" />,
+      element: <EditProfile />,
     },
     {
       path: "/edit-password",
-      element: checkToken ? <EditPassword /> : <Navigate to="/" />,
+      element: <EditPassword />,
     },
     {
       path: "*",
