@@ -13,7 +13,7 @@ import { useTitle } from "utils/hooks/customHooks";
 import Swal from "utils/Swal";
 
 const Index = () => {
-  useTitle("Galaxy - Login");
+  useTitle("Welcome to Galaxy!");
   const [, setCookie] = useCookies(["token"]);
   const MySwal = withReactContent(Swal);
   const navigate = useNavigate();
