@@ -15,7 +15,9 @@ const Timeline = () => {
   useTitle(`Galaxy - Timeline`);
   const [cookie] = useCookies(["token"]);
   const [datas, setDatas] = useState<PostType[]>([]);
-  const checkToken = cookie.token;
+  const checkToken = cookie.token ? true : false;
+  const [isDelete, setIsDelete] = useState(false);
+  const [isEdit, setIsEdit] = useState(false);
 
   useEffect(() => {
     fetchData();
