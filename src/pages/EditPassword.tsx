@@ -23,10 +23,10 @@ const EditPassword = () => {
             placeholder="****************"
           />
           <div className="flex justify-center pt-5 gap-5">
-            <Link className="flex justify-center mt-7 mb-5" to="/timeline">
+            <Link className="flex justify-center mt-7 mb-5" to="/profile">
               <ButtonSmall label="Cancel" />
             </Link>
-            <Link className="flex justify-center mt-7 mb-5" to="/timeline">
+            <Link className="flex justify-center mt-7 mb-5" to="/profile">
               <ButtonSmall label="Done" />
             </Link>
           </div>
