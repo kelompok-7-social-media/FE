@@ -1,18 +1,15 @@
-import React from "react";
+import { InputHTMLAttributes } from "react";
 
-const Input = () => {
+interface Props extends InputHTMLAttributes<HTMLInputElement> {
+  id: string;
+}
+
+export function CustomInput({ id, ...props }: Props) {
   return (
-    <div className="form-control w-full max-w-xs">
-      <label className="label">
-        <span className="label-text">What is your name?</span>
-      </label>
-      <input
-        type="text"
-        placeholder="Type here"
-        className="input input-bordered w-full max-w-xs"
-      />
-    </div>
+    <input
+      id={id}
+      className="w-full rounded-full py-2 px-5 mb-5 border-2 border-gray-500"
+      {...props}
+    />
   );
-};
-
-export default Input;
+}
