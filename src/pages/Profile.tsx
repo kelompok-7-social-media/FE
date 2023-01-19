@@ -1,4 +1,5 @@
 import { BiDotsHorizontalRounded } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 import photo1 from "src/assets/photo1.jpg";
 import picture from "src/assets/picture.jpg";
@@ -8,7 +9,7 @@ import Navbar from "components/Navbar";
 import { useTitle } from "utils/hooks/customHooks";
 
 const Profile = () => {
-  useTitle(`'s Profile`);
+  useTitle(`Galaxy - Profile`);
   return (
     <Layout>
       <Navbar />
@@ -22,12 +23,12 @@ const Profile = () => {
             </span>
           </div>
           <div className="flex justify-center gap-3 md:gap-5 text-sm lg:gap-10">
-            <span>
+            <Link to="/edit-profile">
               <ButtonSmall label="Edit Profile" />
-            </span>
-            <span>
+            </Link>
+            <Link to="/edit-password">
               <ButtonSmall label="Edit Password" />
-            </span>
+            </Link>
           </div>
         </section>
         <section className="border-b-2 pb-3 sm:mx-20 md:mx-40 lg:mx-60 xl:mx-80">
