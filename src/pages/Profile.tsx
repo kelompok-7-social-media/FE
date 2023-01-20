@@ -1,8 +1,8 @@
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
-import photo1 from "src/assets/photo1.jpg";
 import picture from "src/assets/picture.jpg";
+import photo1 from "src/assets/photo1.jpg";
 import { ButtonSmall } from "components/Button";
 import Layout from "components/Layout";
 import Navbar from "components/Navbar";
