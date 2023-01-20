@@ -16,8 +16,9 @@ import Detail from "pages/Detail";
 import Login from "pages/auth";
 import { ThemeContext } from "utils/context";
 
-axios.defaults.baseURL =
-  "https://virtserver.swaggerhub.com/Group-Project7/social-media-app-api/1.0.0/";
+// axios.defaults.baseURL =
+//   "https://virtserver.swaggerhub.com/Group-Project7/social-media-app-api/1.0.0/";
+axios.defaults.baseURL = "http://13.213.0.148:8000/";
 
 const App = () => {
   const [cookie, , removeCookie] = useCookies(["token"]);

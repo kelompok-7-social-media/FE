@@ -40,11 +40,11 @@ const Index = () => {
     axios
       .post("login", body)
       .then((res) => {
-        const { data, message } = res.data;
-        setCookie("token", data.token, { path: "/" });
+        // const { data, message } = res.data;
+        setCookie("token", res.data.token, { path: "/" });
         MySwal.fire({
           title: "Success",
-          text: message,
+          text: res.data.message,
           showCancelButton: false,
         });
         navigate("/timeline");

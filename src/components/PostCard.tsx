@@ -86,7 +86,7 @@ const PostCard: FC<CardProps> = ({
       >
         View all comments
       </p>
-      {datas.slice(0, 3).map((data) => (
+      {datas?.slice(0, 3).map((data) => (
         <CommentCard
           key={data.comment_id}
           comment_id={data.comment_id}

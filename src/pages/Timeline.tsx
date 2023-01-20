@@ -94,7 +94,7 @@ const Timeline = () => {
             </form>
           </section>
         )}
-        {datas.map((data) => (
+        {datas?.map((data) => (
           <PostCard
             key={data.post_id}
             post_id={data.post_id}
