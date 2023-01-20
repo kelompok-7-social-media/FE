@@ -8,7 +8,7 @@ import Navbar from "components/Navbar";
 import { useTitle } from "utils/hooks/customHooks";
 
 const Detail = () => {
-  useTitle(`'s Post`);
+  useTitle(`Galaxy - Post Detail`);
   return (
     <Layout>
       <Navbar />
