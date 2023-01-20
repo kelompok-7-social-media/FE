@@ -41,7 +41,7 @@ const Index = () => {
       .post("login", body)
       .then((res) => {
         const { data, message } = res.data;
-        setCookie("token", data.token, { path: "/timeline" });
+        setCookie("token", data.token, { path: "/" });
         MySwal.fire({
           title: "Success",
           text: message,
