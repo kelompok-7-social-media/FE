@@ -1,4 +1,4 @@
-import { BiDotsHorizontalRounded } from "react-icons/bi";
+import { BiTrash } from "react-icons/bi";
 import { FC } from "react";
 
 interface CommentCardProps {
@@ -20,8 +20,8 @@ const CommentCard: FC<CommentCardProps> = ({
           <span className="text-xs font-bold">{username}</span>
           <span className="text-[0.7rem] font-normal">{created_at}</span>
         </div>
-        <span className="flex">
-          <BiDotsHorizontalRounded />
+        <span className="flex duration-300 active:scale-75 hover:cursor-pointer">
+          <BiTrash />
         </span>
       </div>
       <p className="px-3 text-sm">{comment}</p>

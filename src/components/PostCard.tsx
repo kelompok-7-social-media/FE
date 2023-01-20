@@ -48,10 +48,7 @@ const PostCard: FC<CardProps> = ({
 
   return (
     <section className="border-b-2 py-4 sm:mx-20 md:mx-40 lg:mx-60 xl:mx-80">
-      <div
-        className="flex items-center justify-between px-3 mb-2"
-        onClick={() => onClickDetail()}
-      >
+      <div className="flex items-center justify-between px-3 mb-2">
         <div className="flex items-center gap-3">
           <span className="border-2 rounded-full border-black dark:border-white">
             <BiUser size={25} />
@@ -59,9 +56,24 @@ const PostCard: FC<CardProps> = ({
           <span className="text-sm font-bold lowercase">{username}</span>
           <span className="text-xs tracking-tighter">{created_at}</span>
         </div>
-        <span className="flex">
-          <BiDotsHorizontalRounded />
-        </span>
+        <div className="dropdown dropdown-end">
+          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+            <span className="flex duration-300 active:scale-75 hover:cursor-pointer">
+              <BiDotsHorizontalRounded />
+            </span>
+          </label>
+          <ul
+            tabIndex={0}
+            className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a>Edit</a>
+            </li>
+            <li>
+              <a>Delete</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="mb-2 flex justify-center">
         <img src={photos} alt="photos" />
@@ -70,7 +82,7 @@ const PostCard: FC<CardProps> = ({
 
       <p
         className="px-3 mb-2 text-xs font-bold"
-        onClick={() => onClickDetail()}
+        onClick={() => navigate("/detail")}
       >
         View all comments
       </p>
