@@ -58,7 +58,7 @@ const Timeline = () => {
           text: message,
           showCancelButton: false,
         });
-        navigate("timeline");
+        navigate("/timeline");
       })
       .catch((err) => {
         const { data } = err.response;
