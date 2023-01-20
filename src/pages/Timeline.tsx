@@ -22,7 +22,7 @@ const Timeline = () => {
   const [datas, setDatas] = useState<PostType[]>([]);
   const [description, setDescription] = useState<string>("");
   const [file_photos, setFilePhotos] = useState<[]>([]);
-  const checkToken = cookie.token ? true : false;
+  const checkToken = cookie.token;
   const [isDelete, setIsDelete] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
 
