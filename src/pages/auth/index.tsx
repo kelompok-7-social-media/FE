@@ -88,7 +88,7 @@ const Index = () => {
             <div className="flex justify-center my-3">
               <ButtonWhite
                 type="submit"
-                id="btn-register"
+                id="btn-login"
                 label="Login"
                 loading={loading || disabled}
               />

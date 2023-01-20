@@ -113,6 +113,7 @@ const Signup = () => {
             />
             <div className="flex justify-center my-3">
               <ButtonPink
+                type="submit"
                 id="btn-register"
                 label="Register"
                 loading={loading || disabled}
